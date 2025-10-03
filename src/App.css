@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+.student {
+  color: #61dafbaa;
+  font-size: 20px;
+  border: #61dafbaa solid 2px;
+  border-radius: 10px;
+  padding: 10px;
+}
