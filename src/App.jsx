@@ -15,8 +15,53 @@ function App() {
       <Developer name="asley" age="22" tech="FED" />
       <Developer name="gosley" age="23" tech="FSD" />
       <Developer name="foshley" age="24" tech="BED" />
+      <HireAoffice
+        chair="22"
+        desk="10"
+        computer="30"
+        printars="5"
+        address="USA"
+      />
+      <HireAoffice
+        chair="32"
+        desk="20"
+        computer="40"
+        printars="15"
+        address="UK"
+      />
+      <HireAoffice
+        chair="42"
+        desk="30"
+        // computer=""
+        printars="25"
+        address="CANADA"
+      />
     </>
   );
+  function HireAoffice({ chair, desk, computer = "100", printars, address }) {
+    return (
+      <div style={{ border: "2px solid red", padding: "10px", margin: "10px" }}>
+        <h2>Hire A office</h2>
+        <p>We have many offices</p>
+        <p>{address} office</p>
+        <ul
+          style={{
+            listStyleType: "none",
+            backgroundColor: "blueviolet",
+            borderRadius: "10px",
+            padding: "10px",
+            color: "white",
+            margin: "10px",
+          }}
+        >
+          <li>chairs need : {chair}</li>
+          <li> desks need :{desk}</li>
+          <li>computers need :{computer}</li>
+          <li>printers need : {printars}</li>
+        </ul>
+      </div>
+    );
+  }
 }
 function Welcome() {
   return <h1>Hello, everyone!</h1>;
